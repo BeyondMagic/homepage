@@ -4,11 +4,12 @@ Chrome based start-page. Change anything you want.
 ![preview](/preview.png?raw=trueg)
 
 Search form preview.
-![preview](/search_preview.gif?raw=trueg)
+
+* ![search_preview](/search_preview.gif?raw=trueg)
 
 # Features
 * Just one wallpaper :Z.
-* Random quote from a file. Add how many you want!
+* New random every time you load the page. Add how many you want!
 * BBC News RSS Reader.
 * G1 (Globo) News RSS Reader (exclusive for brazilians, just remove it if you want to. Don't forget to remove it in **scripts.js** too!
 * See the current value of BITCOIN to USD and BRL.
