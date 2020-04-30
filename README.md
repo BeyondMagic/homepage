@@ -5,7 +5,7 @@ Chrome based start-page. Change anything you want.
 
 Search form preview.
 
-* ![search_preview](/search_preview.gif?raw=trueg)
+![search_preview](/search_preview.gif?raw=trueg)
 
 # Features
 * Just one wallpaper :Z.
