@@ -1,0 +1,18 @@
+const quotes =
+	[
+		{
+			"quote": "Something really nice. First Quote.",
+			"author": "No one",
+			"source": "Browser"
+		},
+		{
+			"quote": "Something not really nice. Second Quote.",
+			"author": "Someone",
+			"source": "Internet"
+		},
+		{
+			"quote": "Something really bad. Third Quote.",
+			"author": "Nothin",
+			"source": "Ocean"
+		},
+	];

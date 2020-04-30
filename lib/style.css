@@ -1,0 +1,320 @@
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+::selection {
+	background-color: rgba(255,255,255,0.8);
+	color: rgba(0,0,0,0.8);
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	color: #F5FBEF;
+	font-size: 14px;
+	font-family: Consolas, monaco, monospace;
+	font-weight: lighter;
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "money main feed";
+}
+
+section {
+  position: relative;
+}
+
+section#money {
+  grid-area: money;
+}
+
+section#main {
+  grid-area: main;
+}
+
+section#feed {
+  grid-area: feed;
+}
+
+#background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("./1.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(25%);
+  z-index: -2;
+}
+
+a:visited {
+	color: auto;
+}
+
+#logo {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	user-select: none;
+}
+
+#search:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  user-select: none;
+}
+
+#container {
+	z-index: 9999;
+  position: absolute;
+	padding: 0 0px 0 0px;
+	top: 35%;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+}
+
+#header {
+	z-index: 10;
+	-webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0, .1);
+	-moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0, .1);
+	box-shadow: 1px 1px 4px 0px rgba(0,0,0, .1);
+	border-radius: 4px;
+  margin-bottom: 2rem;
+	background-color: transparent;
+}
+
+
+#links {
+	display: -moz-box;
+	display: -webkit-box;
+	width: 100%;
+}
+
+.linksbox {
+	-webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0, .1);
+	-moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0, .1);
+	box-shadow: 1px 1px 4px 0px rgba(0,0,0, .1);
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	background-color: transparent;
+}
+
+.linksbox h3 {
+	padding-bottom: 5px;
+}
+
+.linksbox a {
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.linksbox a::before {
+  content: '├ ';
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.linksbox a:focus,
+.linksbox a:hover {
+	font-style: italic;
+	color: auto;
+	outline: none;
+  opacity: 1;
+}
+
+#ctime {
+  font-size: 15px;
+}
+
+h3 {
+	font-size: 14px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.cyan, .blue, .green, .gray {
+	padding: 0;
+}
+
+.cyan {
+	color: #2b4e95;
+	opacity: 1;
+}
+
+.blue {
+	color: #708ca4;
+}
+
+.green {
+  color: #94C9A9;
+}
+
+.lightcyan {
+	color: #59cf93;
+}
+
+.gray {
+	color: inherit;
+	opacity: 0.75;
+}
+
+form {
+	display: inline;
+}
+
+input {
+	display: inline;
+	background: none;
+	display: inline;
+	border: none;
+	color: #F5FBEF;
+	width: 70%;
+	font-size: 14px;
+	font-family: Consolas, monaco, monospace;
+}
+
+input:focus {
+	outline: none;
+}
+
+/* Quotes */
+
+#quoteheader {
+	position: absolute;
+	display: flex;
+  bottom: 4rem;
+  width: 100%;
+	word-wrap: break-word;
+	flex-direction: column;
+  text-align: center;
+}
+
+#quote {
+	word-wrap: inherit;
+	margin: auto 0;
+	/*padding-right: 1rem; */
+	white-space: pre-wrap;
+  text-align: center;
+}
+
+/*
+#quote::before {
+	content: '“';
+}
+
+#quote::after {
+	content: '”';
+}*/
+
+#infquote {
+	margin: auto 0;
+	white-space: pre;
+	padding-right: 1rem;
+  text-align: center;
+}
+
+/* Money */
+
+#money {
+  display: flex;
+  flex-direction: column;
+}
+
+#money > article {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.currency {
+  color: #edcc87;
+}
+
+/* Feed */
+#feed {
+  height: 100%;
+}
+
+#feed > article {
+  min-height: calc(50vh - 2rem);
+  max-height: calc(50vh - 2rem);
+  margin: 1rem 0;
+  -webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0, .1);
+	-moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0, .1);
+	box-shadow: 1px 1px 4px 0px rgba(0,0,0, .1);
+  overflow-y: auto;
+}
+
+.dateNews {
+  float: right;
+  opacity: 0.6;
+  margin-right: 1rem;
+}
+
+#feed > article > article {
+  display: none;
+  margin: 1rem 0;
+}
+
+#feed > article:hover > *,
+#feed > article > article:hover ~ *,
+.showNews:hover ~ article {
+  display: block!important;
+}
+
+
+
+a.news {
+  color: #F5FBEF;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+a.news:focus,
+a.news:hover {
+  text-decoration: underline;
+}
+
+/* Animation for waiting API */
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.lds-dual-ring::after {
+  content: " ";
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
