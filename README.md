@@ -14,6 +14,7 @@ Search form preview.
 * See the current value of BITCOIN to USD and BRL.
 * See the current value of BRL (real) to USD and EUR.
 * Search in four platforms (Google, Youtube, Github and Reddit).
+* Type anywhere to focus on the search input.
 
 # Usage
 Check [/r/startpages](https://www.reddit.com/r/startpages/) to find out how to use it with your specific browser.
