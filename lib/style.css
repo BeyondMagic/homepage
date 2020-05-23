@@ -113,6 +113,13 @@ a:visited {
   background-color: transparent;
 }
 
+.linksin {
+  max-height: 10rem;
+  overflow-y: auto;
+  scrollbar-width: none;
+  scrollbar-height: none;
+}
+
 .linksbox h3 {
   padding-bottom: 5px;
 }
@@ -223,7 +230,7 @@ input:focus {
 
 #infquote {
   margin: auto 0;
-  white-space: pre;
+  white-space: pre-line;
   padding-right: 1rem;
   text-align: center;
 }
@@ -257,6 +264,8 @@ input:focus {
   -moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0, .1);
   box-shadow: 1px 1px 4px 0px rgba(0,0,0, .1);
   overflow-y: auto;
+  scrollbar-width: none;
+  scrollbar-height: none;
 }
 
 .dateNews {
