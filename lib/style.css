@@ -78,12 +78,6 @@ a:visited {
   margin-top: 1rem;  
 } 
 
-#logo {
-  position: relative;
-  margin-left: 50%;
-  transform: translateX(-30%);
-}
-
 #search:hover {
   cursor: pointer;
   text-decoration: underline;
@@ -304,8 +298,6 @@ form {
   display: block!important;
 }
 
-
-
 a.news {
   color: #F5FBEF;
   opacity: 0.8;
@@ -348,7 +340,6 @@ a.news:hover {
 
 @media only screen and (max-width: 900px) {
   body {
-    display: ;
     grid-template-columns: 0fr 3fr 0fr;
     grid-template-rows: 1fr;
     gap: 0;
@@ -361,6 +352,16 @@ a.news:hover {
 
   section#money,
   section#feed {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) and (max-height: 400px) {
+  #quoteheader {
+    display: none;
+  }
+
+  #wel {
     display: none;
   }
 }
