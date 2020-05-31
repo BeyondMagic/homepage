@@ -64,11 +64,24 @@ a:visited {
   color: auto;
 }
 
+#wel {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#wel > div {
+  white-space: pre;
+}
+
+#wel #ctime {
+  margin-top: 1rem;  
+} 
+
 #logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  user-select: none;
+  position: relative;
+  margin-left: 50%;
+  transform: translateX(-30%);
 }
 
 #search:hover {
@@ -184,19 +197,25 @@ form {
   display: inline;
 }
 
-input {
-  display: inline;
-  background: none;
+#input {
   display: inline;
   border: none;
   color: #F5FBEF;
-  width: 70%;
   font-size: 14px;
   font-family: Consolas, monaco, monospace;
+  width: 0;
+  margin-left: 40%;
+  background: none;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  transition: all ease-in-out 0.15s;
 }
 
-input:focus {
-  outline: none;
+#input:focus {
+  width: 70%;
+  border: 0;
+  margin-left: 0;
+  transform: none;
 }
 
 /* Quotes */
