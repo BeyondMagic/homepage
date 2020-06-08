@@ -78,6 +78,7 @@ a:visited {
   margin-top: 1rem;  
 } 
 
+#searc
 #search:hover {
   cursor: pointer;
   text-decoration: underline;
@@ -191,25 +192,19 @@ form {
   display: inline;
 }
 
-#input {
+input {
+  display: inline;
+  background: none;
   display: inline;
   border: none;
   color: #F5FBEF;
+  width: 70%;
   font-size: 14px;
   font-family: Consolas, monaco, monospace;
-  width: 0;
-  margin-left: 40%;
-  background: none;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
-  transition: all ease-in-out 0.15s;
 }
 
-#input:focus {
-  width: 70%;
-  border: 0;
-  margin-left: 0;
-  transform: none;
+input:focus {
+  outline: none;
 }
 
 /* Quotes */
@@ -298,6 +293,8 @@ form {
   display: block!important;
 }
 
+
+
 a.news {
   color: #F5FBEF;
   opacity: 0.8;
@@ -340,6 +337,7 @@ a.news:hover {
 
 @media only screen and (max-width: 900px) {
   body {
+    display: ;
     grid-template-columns: 0fr 3fr 0fr;
     grid-template-rows: 1fr;
     gap: 0;
@@ -354,14 +352,18 @@ a.news:hover {
   section#feed {
     display: none;
   }
+
+  #quoteheader {
+    bottom: 1rem;
+    max-height: 20vh;
+    scrollbar-width: none;
+    scrollbar-height: none;
+    overflow-y: auto;
+  }
 }
 
-@media only screen and (max-width: 700px) and (max-height: 400px) {
-  #quoteheader {
-    display: none;
-  }
-
-  #wel {
+@media only screen and (max-width: 730px) and (max-height: 430px) {
+  #wel, #quoteheader {
     display: none;
   }
 }
